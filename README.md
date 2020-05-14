@@ -5,8 +5,9 @@
 * Yvar Nanlohij - [Yvar-School](https://github.com/Yvar-School)
 
 ## API
-* Weerlive - [](https://weerlive.nl/delen.php)
+* Weerlive - [Website](https://weerlive.nl/delen.php)
 
 
 ## Bronnen
-* NL Kaart - [](https://nlmaps.nl/index.html)
+* NL Kaart - [Website](https://nlmaps.nl/index.html)
+* Font awesome - [Website](https://fontawesome.com/)
