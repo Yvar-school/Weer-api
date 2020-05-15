@@ -18,7 +18,8 @@ function requestData() {
            "Windkracht: <i class='fas fa-wind'></i>" + obj.liveweer[0].windkmh + "<br>" + 
            "Wind Richting: <i class='fas fa-location-arrow'></i>" + obj.liveweer[0].windr + "<br>" +
            "Max temp: <i class='fas fa-temperature-high'></i>" + obj.liveweer[0].d0tmax + "<br>" +
-           "Min temp: <i class='fas fa-temperature-low'></i>" + obj.liveweer[0].d0tmin + "<br>" 
+           "Min temp: <i class='fas fa-temperature-low'></i>" + obj.liveweer[0].d0tmin + "<br>" +
+           "Neerslagkans vandaag: " + obj.liveweer[0].d0neerslag + "%"
            ;
         }
     });

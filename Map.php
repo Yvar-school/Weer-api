@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include "layout.php";?>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css">
-    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
-    <script src="https://nlmaps.nl/dist/nlmaps.iife.js"></script>
 </head>
 
 <body>
+    <div id="content">
     <div id="nlmaps-holder"></div>
     <script>
         var nlMapsHolder = document.getElementById('nlmaps-holder');
-        nlMapsHolder.style.height = '400px'; // Change to required height
-        nlMapsHolder.style.width = '500px'; // Change to required height
+        nlMapsHolder.style.height = '900px'; // Change to required height
+        nlMapsHolder.style.width = '1200px'; // Change to required height
+        
     
         var opts = {
             style: 'standaard',
@@ -30,6 +28,7 @@
         };
         var map = nlmaps.createMap(opts);
     </script> 
+    </div>
 </body>
 
 </html>
