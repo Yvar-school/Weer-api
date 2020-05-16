@@ -22,16 +22,16 @@ con.connect(function(err) {
 
 
 function check() {
-    con.query("SELECT * FROM " + table + " WHERE DATE(date) = CURDATE()", function (err, result, fields) {
-        if (err) throw err;
+  con.query("SELECT * FROM " + table + " WHERE DATE(date) = CURDATE()", function (err, result, fields) {
+    if (err) throw err;
 
-        if(result.length == 0) {
-            //Vandaag is er nog geen record aangemaakt.
-            insertRecord();
-        }else {
-            //Er is vandaag al een record aangemaakt.
-        }
-      });
+    if(result.length == 0) {
+        //Vandaag is er nog geen record aangemaakt.
+        insertRecord();
+    }else {
+        //Er is vandaag al een record aangemaakt.
+    }
+  });
 }
 
 function insertRecord() {
