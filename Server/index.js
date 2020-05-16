@@ -4,12 +4,12 @@ var unirest = require("unirest");
 var interval = (1000 * 60) * 30;
 //Laatste parameter is om de hoeveel minuten hij moet checken.
 
-var table = "koekjes";
+var table = "temperatures";
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "koekjes"
+  database: "weerapi"
 });
 
 con.connect(function(err) {
