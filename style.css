@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  float: left;
+  height: 100%;
+}
+
+#content {
+  width: fit-content;
+  float: left;
+  position: relative;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #37474F;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+#sidebar ul {
+  width: 100%;
+  padding: 0;
+}
+
+#sidebar li {
+  width: 100%;
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+#sidebar .nav a {
+  background: none;
+  color: #CFD8DC;
+  font-size: 20px;
+  padding: 16px 7px;
+}
+
+#sidebar .nav a:hover {
+  background: none;
+  color: #ECEFF1;
+}
+
+#sidebar .nav a i {
+  margin-right: 16px;
+}
