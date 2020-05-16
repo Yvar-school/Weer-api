@@ -1,3 +1,5 @@
+<?php include "./includes/production.php"; ?>
+
 <head>
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
