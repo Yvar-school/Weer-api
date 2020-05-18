@@ -69,7 +69,10 @@ body {
   width: 100%;
   padding: 0;
 }
-
+.nav{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
 #sidebar li {
   width: 100%;
   list-style: none;
