@@ -1,10 +1,10 @@
 <?php
 
 $host = 'localhost';
-$dbName = 'koekjes';
+$dbName = 'weerapi';
 $username = 'root';
 $password = '';
-$table = 'koekjes';
+$table = 'temperatures';
 $connection;
 
 try {

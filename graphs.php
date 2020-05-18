@@ -15,7 +15,7 @@
         </div>
         <script>
             <?php
-                $query = $connection->prepare("SELECT `min_temp`,`max_temp`,`date` FROM " . $table . " ORDER BY date LIMIT 10");
+                $query = $connection->prepare("SELECT `min_temp`,`max_temp`,`date` FROM " . $table . " ORDER BY date DESC LIMIT 10");
                 $query->execute();
 
                 $min_temps = "[";
@@ -45,7 +45,7 @@
                 echo "var dates = " . $dates . "];";
             ?>
 
-            generateChart(min, max, dates);
+            generateChart(min.reverse(), max.reverse(), dates.reverse());
         </script>
     </body>
 </html>
