@@ -6,6 +6,7 @@ $username = 'root';
 $password = '';
 $table = 'temperatures';
 $connection;
+$error = '';
 
 try {
     $options = array(
@@ -14,5 +15,6 @@ try {
     );
 
     $connection = new PDO("mysql:host=" . $host . ";dbname=" . $dbName, $username, $password, $options);
-} catch (PDOExeception $e) {
+} catch (PDOException $e) {
+    $error = 'Database kan niet geopend worden...<BR>';
 }

@@ -1,6 +1,6 @@
 <?php
 
-$production_mode = true;
+$production_mode = false;
 
 
 

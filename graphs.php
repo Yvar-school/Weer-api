@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <?php 
-        include "layout.php";
-        include_once 'includes/database.inc.php';
-    ?>
-
-    <head>
-        <script src="./js/chart.js"></script>
-    </head>
-    <body>
-        <div class="chart-container">
-            <canvas id="myChart" width="100" height="100"></canvas>
-        </div>
-        <script>
-            <?php
+<script src="./js/chart.js"></script>
+<div class="chart-container">
+    <canvas id="myChart" width="100" height="100"></canvas>
+</div>
+<script>
+    <?php
+        try {
+            if (!isset($connection)) {
+                $error .= 'Er is geen verbinding met de database.<BR>';
+            }
+            else 
+            {
                 $query = $connection->prepare("SELECT `min_temp`,`max_temp`,`date` FROM " . $table . " ORDER BY date DESC LIMIT 10");
                 $query->execute();
 
@@ -43,9 +38,10 @@
                 echo "var min = " . $min_temps . "];";
                 echo "var max = " . $max_temps . "];";
                 echo "var dates = " . $dates . "];";
-            ?>
-
-            generateChart(min.reverse(), max.reverse(), dates.reverse());
-        </script>
-    </body>
-</html>
+            }
+    } catch (PDOException $e) {
+        $error .= 'Database kan niet geopend worden...<BR>';
+    }
+    ?>
+    generateChart(min.reverse(), max.reverse(), dates.reverse());
+</script>
