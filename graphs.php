@@ -3,6 +3,7 @@
 <html lang="en">
     <?php 
         include "layout.php";
+        include "links.php";
         include_once 'includes/database.inc.php';
     ?>
 

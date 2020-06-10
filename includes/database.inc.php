@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbName = 'weerapi';
+$dbName = 'koekjes';
 $username = 'root';
 $password = '';
 $table = 'temperatures';
