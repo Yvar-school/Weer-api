@@ -1,0 +1,19 @@
+Verbeterpunten
+===========
+De applicatietitel linksbovenin is een link, maar navigeert nergens heen. Het is gebruikelijk om die te linken aan de homepagina, misschien was dat ook het plan?
+
+Het was voor mij onduidelijk wat de 'Home' URL is, en heb toen Map.php gebruikt, omdat ik de bestanden zie. Zorg ervoor dat je applicatie altijd een index bestand heeft (bijvoorbeeld index.php of index.html), want een bezoeker kent je bestandsstructuur niet.
+
+JSON hanteert een strenge syntax, en zoals het nu is, zit er een syntax error in package.json ('npm install' werkt hierdoor niet). Dus op zich is JSON heel simpel, maar het komt wel precies.
+
+De structuur is beter dan voorheen, al heeft graphs.php nog wel 2 <head> elementen, en dat is er 1 te veel.
+
+De layout.php 'zweeft' tussen <head> en <body> in, zit eigenlijk meteen onder <html>, dus deze moet nog even de juiste plek krijgen.
+
+In database.inc.php komt een fatal error als errormeldingen aan staan, de try-catch werkt nu niet vanwege een kleine typfout: "PDOExeception".
+
+Tips
+====
+De algemene conventie is om de 'node_modules' map in .gitignore te zetten, omdat men het zelf kan installeren met 'npm install'. Deze map kan gigantisch worden, en neemt daardoor onnodig ruimte in in de repository, maar ook commits worden er onduidelijker door, omdat je eigen wijzigingen ondergesneeuwd worden.
+
+Controleer voor oplevering altijd of er eventueel errors of warnings in de browser-console zitten.
